@@ -1,0 +1,13 @@
+/* Coolors Exported Palette - https://coolors.co/ffb235-2e4052-a8591d-000000 */
+
+/* CSV */
+ffb235,2e4052,a8591d,000000
+
+/* Array */
+["ffb235","2e4052","a8591d","000000"]
+
+/* Object */
+{"Bright Yellow Crayola":"ffb235","Charcoal":"2e4052","Windsor Tan":"a8591d","Black":"000000"}
+
+/* Extended Array */
+[{"name":"Bright Yellow Crayola","hex":"ffb235","rgb":[255,178,53],"cmyk":[0,30,79,0],"hsb":[37,79,100],"hsl":[37,100,60],"lab":[78,18,70]},{"name":"Charcoal","hex":"2e4052","rgb":[46,64,82],"cmyk":[44,22,0,68],"hsb":[210,44,32],"hsl":[210,28,25],"lab":[26,-2,-13]},{"name":"Windsor Tan","hex":"a8591d","rgb":[168,89,29],"cmyk":[0,47,83,34],"hsb":[26,83,66],"hsl":[26,71,39],"lab":[46,28,46]},{"name":"Black","hex":"000000","rgb":[0,0,0],"cmyk":[0,0,0,100],"hsb":[0,0,0],"hsl":[0,0,0],"lab":[0,0,0]}]
