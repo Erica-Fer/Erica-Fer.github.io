@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    background-color: #ffb235;
+}
+
+.parent{
+    background-color: antiquewhite;
+    height: 300px;
+    width: 300px;
+    animation: grow-box 400ms ease-in-out;
+    /* animation: flip-box 700ms ease-in-out; */
+}
+
+.child{
+    background-color: #ffb235;
+    animation: flip-box 400ms ease-in-out;
+    height: 50%;
+
+}
+
+
+/* 
+
+KEYFRAMES 
+
+*/
+
+@keyframes flip-box{
+    0%{
+        transform: rotate(0deg);
+      }
+    80%{
+        transform: rotate(190deg);
+    }
+    90%{
+        transform: rotate(175deg);
+
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes grow-box{
+    0%{
+        transform: scale(50%);
+    }
+    80%{
+        transform: scale(110%);
+    }
+    90%{
+        transform: scale(95%);
+
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
+
+@keyframes body-load{
+    0%{
+        transform: translateY(-100%);
+        transform: translateX(-100%);
+    }
+
+    80%{
+        transform: translateX(2%);
+    }
+
+    100%{
+        transform: translateX(0%);
+        transform: translateY(0%);
+    }
+}
