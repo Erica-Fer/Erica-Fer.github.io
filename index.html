@@ -1,3 +1,8 @@
+<!-- 
+    REFERENCES
+
+     https://stackoverflow.com/questions/8286550/transparent-hollow-or-cut-out-circle#:~:text=%20You%20can%20achieve%20a%20transparent%20cut%20out,transparent...%202%20CSS%20only%20using%20BOX-SHADOWS%20More%20
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,8 +17,28 @@
 
 <body>
     <h1>text</h1>
-    <!-- https://stackoverflow.com/questions/8286550/transparent-hollow-or-cut-out-circle#:~:text=%20You%20can%20achieve%20a%20transparent%20cut%20out,transparent...%202%20CSS%20only%20using%20BOX-SHADOWS%20More%20 -->
 
+    <svg viewBox="-10 -10 120 120">
+        <mask id="myMask">
+          <!-- Everything under a white pixel will be visible -->
+          <rect x="0" y="0" width="100" height="100" fill="white" />
+
+          <rect x="0" y="0" width="10" height="10" fill="black" />
+
+      
+          <!-- Everything under a black pixel will be invisible -->
+          <!-- <path d="M10,35 A20,20,0,0,1,50,35 A20,20,0,0,1,90,35 Q90,65,50,95 Q10,65,10,35 Z" fill="black" /> -->
+        </mask>
+      
+      
+        <!-- with this mask applied, we "punch" a heart shape hole into the circle -->
+        <circle cx="50" cy="50" r="50" mask="url(#myMask)" />
+      </svg>
+    
+
+    <!-- <svg>
+        <rect x="0" y="0" width="100%" height="100vh" mask="url(#obj)"/>
+    </svg> -->
 
     <!-- <div class="box">
 
