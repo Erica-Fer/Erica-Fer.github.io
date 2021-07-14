@@ -1,6 +1,25 @@
 body{
-    margin: 0;
     background-color: #ffb235;
+    margin: 0;
+}
+
+nav{
+    background-color: azure;
+    top: 0;
+}
+
+ul{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-bar:hover{
+    color: aquamarine;
 }
 
 .parent{
