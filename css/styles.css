@@ -30,6 +30,17 @@ ul{
     float: right;    
 }
 
+.nav-home{
+    color: white;
+    margin: 10px;
+    padding-right: 50px;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+    float: left;
+}
+
 .nav-bar:hover{
     color: grey;
 }
