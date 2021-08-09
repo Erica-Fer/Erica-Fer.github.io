@@ -1,8 +1,19 @@
+/* BODY */
 body{
     background-color: #ffb235;
     margin: 0;
 }
 
+.body-text{
+    margin: 10%;
+    padding: 5%;
+}
+
+/* END BODY */
+
+
+
+/* NAV BAR */
 nav{
     background-color: #2E4052;
     position: fixed;
@@ -25,7 +36,7 @@ ul{
     padding-right: 50px;
     text-decoration: none;
     text-align: center;
-    font-size: large;
+    font-size: 1.25em;
     font-weight: 700;
     float: right;    
 }
@@ -45,8 +56,11 @@ ul{
     color: grey;
 }
 
+/* END NAV BAR */
 
 
+
+/* ? */
 .parent{
     background-color: antiquewhite;
     height: 300px;
@@ -62,13 +76,11 @@ ul{
 
 }
 
+/* ? */
 
-/* 
 
-KEYFRAMES 
 
-*/
-
+/* KEYFRAMES */
 @keyframes flip-box{
     0%{
         transform: rotate(0deg);
@@ -116,3 +128,5 @@ KEYFRAMES
         transform: translateY(0%);
     }
 }
+
+/* END KEYFRAMES */
