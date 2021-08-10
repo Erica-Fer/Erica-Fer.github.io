@@ -64,18 +64,22 @@ nav a::before{
     height: 3px;
     display: flex;
     justify-content: flex-end;
-    background: black;
+    background: white;
     position: absolute;
     top: 1.3em;
     left: 0;
     right: 0;
     transform-origin: left;
     transform: scale(0,1);
-    transition: 250ms ease-in-out;
+    animation: grow-out 250ms;
+    /* transition: 250ms ease-in-out; */
 }
 
 nav a:hover::before{
+    /* transform-origin: left; */
     transform: scale(1,1);
+    animation: grow-in 250ms;
+    /* transition: 250ms ease-in-out; */
 }
 
 .nav-home{
@@ -119,6 +123,28 @@ nav a:hover::before{
 
 
 /* KEYFRAMES */
+@keyframes grow-in{
+    0%{
+        transform: scale(0,1);
+    }
+
+    100%{
+        transform: scale(1,1);
+    }
+}
+
+@keyframes grow-out{
+    0%{
+        transform-origin: right;
+        transform: scale(1,1);
+    }
+
+    100%{
+        transform-origin: right;
+        transform: scale(0,1);
+    }
+}
+
 @keyframes flip-box{
     0%{
         transform: rotate(0deg);
