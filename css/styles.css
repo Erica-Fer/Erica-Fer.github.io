@@ -4,46 +4,93 @@ body{
     margin: 0;
 }
 
-.body-text{
-    margin: 10%;
-    padding: 5%;
+.main-content{
+
+
 }
 
 /* END BODY */
 
 
 
+/*
+Credit to Kevin Powell tutorial for helping with designing navbar.
+https://www.youtube.com/watch?v=8QKOaTYvYUA&t=4s
+*/
 /* NAV BAR */
 header{
     background-color: #2E4052;
-    display: grid;
-    grid-template-columns: .1fr auto minmax(300px, 1fr) .1fr;
     position: fixed;
     text-align: center;
     width: 100%;
     top: 0;
 }
 
-nav{
-    /* end Edge support stuff */
-    grid-column: 3 / 4;
+.toggle{
+    visibility: hidden;
+}
+
+#toggle:checked ~ nav{
+    display: block;
+    visibility: visible;
+
+}
+
+.toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
 }
 
+.toggle-label span,
+.toggle-label span::before,
+.toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.toggle-label span::before,
+.toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.toggle-label span::before {
+    bottom: 7px;
+}
+  
+.toggle-label span::after {
+    top: 7px;
+}
+
+nav{
+    position: absolute;
+    visibility: hidden;
+    left: 0;
+    background-color: #2E4052;
+    width: 100%;
+}
+
 nav ul{
-    list-style: none;
-    display: flex;
-    margin: 0;
     padding: 0;
+    margin-left: 1em;
+    list-style: none;
+    text-align: left;
 }
 
 nav li{
-    margin: 5px;
-    padding: 5px;
+    margin: 0;
+    margin-top: 1em;
+    padding: 0;
 }
-
 
 nav a{
     font-family: Arial, Helvetica, sans-serif;
@@ -54,47 +101,110 @@ nav a{
     font-weight: 700;
 }
 
-nav a:hover{
-    color: grey;
-    transition: 150ms ease-in-out;
-}
-
 nav a::before{
     content: '';
-    height: 3px;
+    height: 1px;
     display: flex;
     justify-content: flex-end;
     background: white;
     position: absolute;
-    top: 1.3em;
+    top: 1.1em;
     left: 0;
     right: 0;
-    transform-origin: right;
-    transform: scale(0,1);
-    transition: 250ms ease-in-out;
-    /* animation: grow-out 250ms; */
-}
-
-nav a:hover::before{
-    transform: scale(1,1);
-    animation: grow-in 250ms;
 }
 
 .nav-home{
     color: white;
-    grid-column: 2/3;
-    display: flex;
-    justify-content: flex-start;
+    text-align: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 1.25em;
     font-weight: 700;
-    float: left;
 }
 
 
-
+@media (min-width: 800px) {
+    header{
+        background-color: #2E4052;
+        display: grid;
+        grid-template-columns: .1fr auto minmax(300px, 1fr) .1fr;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        top: 0;
+    }
+    
+    nav{
+        /* end Edge support stuff */
+        position: relative;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    nav ul{
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav li{
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    
+    nav a{
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 700;
+    }
+    
+    nav a:hover{
+        color: grey;
+        transition: 150ms ease-in-out;
+    }
+    
+    nav a::before{
+        content: '';
+        height: 3px;
+        display: flex;
+        justify-content: flex-end;
+        background: white;
+        position: absolute;
+        top: 1.3em;
+        left: 0;
+        right: 0;
+        transform-origin: right;
+        transform: scale(0,1);
+        transition: 250ms ease-in-out;
+        /* animation: grow-out 250ms; */
+    }
+    
+    nav a:hover::before{
+        transform: scale(1,1);
+        animation: grow-in 250ms;
+    }
+    
+    .nav-home{
+        color: white;
+        grid-column: 2/3;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        font-size: 1.25em;
+        font-weight: 700;
+        float: left;
+    }
+}
 
 /* END NAV BAR */
 
