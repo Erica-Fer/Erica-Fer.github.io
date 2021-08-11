@@ -140,6 +140,10 @@ nav a::before{
         display: none;
     }
 
+    .toggle{
+        display: none;
+    }
+
     header{
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
@@ -205,19 +209,14 @@ nav a::before{
     }
     
     .nav-home{
-        all:unset;
-        color: white;
         grid-column: 2/3;
         display: flex;
         justify-content: flex-start;
-        align-items: center;
-        font-family: Arial, Helvetica, sans-serif;
-        text-decoration: none;
-        font-size: 1.25em;
-        font-weight: 700;
-        margin: 5px;
-        padding: 5px;
-        float: left;
+        transition: 250ms ease-in-out;
+    }
+
+    .nav-home:hover{
+        transform: scale(1.2,1.2);
     }
 }
 
