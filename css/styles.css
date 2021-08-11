@@ -13,6 +13,7 @@ body{
 @media (min-width: 800px) {
     .main-content{
         display: grid;
+        padding: 0;
         grid-template-columns: 10em minmax(250px, 1fr) 10em;
     
     }
