@@ -5,8 +5,22 @@ body{
 }
 
 .main-content{
+    margin-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
 
-
+@media (min-width: 800px) {
+    .main-content{
+        display: grid;
+        grid-template-columns: 10em minmax(250px, 1fr) 10em;
+    
+    }
+    
+    .page-text{
+        grid-column: 2/3;
+        align-items: left;
+    }
 }
 
 /* END BODY */
@@ -146,7 +160,7 @@ nav a::before{
 
     header{
         display: grid;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        grid-template-columns: 10em auto minmax(400px, 3fr) 10em;
         padding: 0;
         margin: 0;
     }
