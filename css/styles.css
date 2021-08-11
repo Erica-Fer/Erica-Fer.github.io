@@ -1,10 +1,20 @@
+/* VARIABLES */
+:root{
+
+    --main-color: #ffb235;
+    --accent-color: #2E4052;
+    --alt-color: #A8591D;
+}
+
 /* BODY */
 body{
-    background-color: #ffb235;
+    background-color: var(--main-color);
     margin: 0;
 }
 
 .main-content{
+    display: grid;
+    grid-template-rows: auto minmax(100px, 1fr);
     margin-top: 5em;
     padding-left: 1em;
     padding-right: 1em;
@@ -12,7 +22,6 @@ body{
 
 @media (min-width: 800px) {
     .main-content{
-        display: grid;
         padding: 0;
         grid-template-columns: 10em minmax(250px, 1fr) 10em;
     
@@ -28,13 +37,25 @@ body{
 
 
 
+/*FOOTER*/
+.footer{
+    grid-row: 2/3;
+    grid-column: 1/4;
+    margin-top: 5em;
+    align-items: center;
+    background-color: black;
+}
+
+
+/* END FOOTER */
+
 /*
 Credit to Kevin Powell tutorial for helping with designing navbar.
 https://www.youtube.com/watch?v=8QKOaTYvYUA&t=4s
 */
 /* NAV BAR */
 header{
-    background-color: #2E4052;
+    background-color: var(--accent-color);
     padding: 1em;
     position: fixed;
     text-align: center;
@@ -97,7 +118,7 @@ nav{
     position: absolute;
     left: 0;
     margin-top: 1em;
-    background-color: #2E4052;
+    background-color: var(--accent-color);
     width: 100%;
     transform-origin: top;
     transform: scale(1,0);
