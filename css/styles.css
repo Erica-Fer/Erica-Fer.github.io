@@ -16,6 +16,8 @@ html{
 /* BODY */
 body{
     background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
     min-height: 100%;
     margin: 0;
 }
@@ -125,6 +127,25 @@ body{
     font-weight: 50;
     color: white;
     padding: 0;
+}
+
+@media (max-width: 800px){
+    .footer{
+        margin-top: auto;
+    }
+
+    .footer ul{
+        margin-top: .5em;
+    }
+    
+    .footer .contact{
+        margin-bottom: .5em;
+    }
+
+    /* .footer .contact{
+        position: absolute;
+        font-size: small;
+    } */
 }
 
 /* END FOOTER */
