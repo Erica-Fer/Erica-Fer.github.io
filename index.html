@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="https://erica-fer.github.io/favicon.png">
     <link rel="stylesheet" href="css/styles.css">
     <title>Welcome</title>
@@ -12,10 +13,10 @@
 
 <body>
     <!-- NAV BAR -->
+    <!-- hacky fix so that everything can be grid based -->
     <header>
         <a href="index.html" class="nav-home">Home</a>
         <input type="checkbox" id="toggle" class="toggle">
-        
         
         <nav>
             <div class="underline"></div>
@@ -30,20 +31,48 @@
             <span></span>
         </label>
     </header>
-    
+
     <div class="main-content">
         <!-- PAGE TEXT -->
         <div class="page-text">
-        <h1>Heyo!</h1>
-        <p>I am a <strong>Washington state based developer</strong> with full-stack web development experience, and a
-            <strong>degree in Computer Science</strong> from the University of Washington Bothell. This personal
-            web-page is a place for me to test out and share my technical projects and experiences with you.
-        </p>
-        <br>
-        <h2>This site is currently under construction,</h2>
-        <p>but I'll be making updates regularly, so feel free to check back whenever. </p>
+            <h1>Heyo!</h1>
+            <p>I am a <strong>Washington state based developer</strong> with full-stack web development experience, and
+                a
+                <strong>degree in Computer Science</strong> from the University of Washington Bothell. This personal
+                web-page is a place for me to test out and share my technical projects and experiences with you.
+            </p>
+            <br>
+            <h2>This site is currently under construction,</h2>
+            <p>but I'll be making updates regularly, so feel free to check back whenever. </p>
+        </div>
     </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/erica-m-ferguson/" target="_blank">
+                    <i class="fa fa-linkedin-square fa-2x" id="linked-icon"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://github.com/Erica-Fer" target="_blank">
+                    <i class="fa fa-github fa-2x" id="git-icon"></i>
+                    <span>GitHub</span>
+                </a>
+            </li>
+            
+        </ul>
+
+        <p>© Erica Ferguson, 2021</p>
+        <a href="contact.html" class="contact">
+            <i class="fa fa-envelope" id="contact-icon"></i>
+            <span>Contact</span>
+        </a>
     </div>
+    
 </body>
 
 </html>
