@@ -1,10 +1,5 @@
-/* VARIABLES */
-html{
-    height: 100%;
-}
 
 :root{
-
     --main-color: #ffb235;
     --accent-color: #2E4052;
     --alt-color: #A8591D;
@@ -12,6 +7,10 @@ html{
 
 * {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    height: 100%;
 }
 
 /* BODY */
@@ -75,7 +74,7 @@ body{
     margin: 0;
     padding: 0;
     justify-content: center;
-    padding-top: 1em;
+    margin-top: 2em;
 }
 
 .footer ul::after{
@@ -104,19 +103,33 @@ body{
     color: var(--accent-color);
 }
 
+.footer .contact{
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    font-size: large;
+    margin-bottom: 2em;
+}
+
+.footer .contact i{
+    padding-right: .25em;
+}
+
 .footer p{
     display: flex;
     justify-content: center;
     font-size: small;
-    font-weight: lighter;
+    font-style: oblique;
+    margin-top: 3em;
+    margin-bottom: .25em;
+    font-weight: 50;
     color: white;
-    margin: 0;
     padding: 0;
 }
 
-
-
 /* END FOOTER */
+
+
 
 /*
 Credit to Kevin Powell tutorial for helping with designing navbar.
