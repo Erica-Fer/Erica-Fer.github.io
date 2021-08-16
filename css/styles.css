@@ -365,9 +365,21 @@ nav a::before{
 /* 
     _CONTACT
 */
+.main-content{
+    color: var(--accent-color);
+}
+
 .main-content h1{
-    color: #2E4052;
-    font-size: 1.4rem;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+.main-content p{
+    font-size: .9rem;
+    font-style: oblique;
+    text-align: center;
+    margin-top: 0;
 }
 
 .form-wrapper{
@@ -376,6 +388,13 @@ nav a::before{
     background: white;
     border-radius: 5px;
     padding: 1em;
+}
+
+.form-wrapper h1{
+    text-align: left;
+    margin: 0;
+    margin-bottom: .5em;
+    font-size: medium;
 }
 
 .form-wrapper form{
@@ -387,7 +406,9 @@ nav a::before{
 
 .form-wrapper p{
     font-weight: 600;
+    text-align: left;
     font-size: small;
+    font-style: normal;
 }
 
 .form-wrapper input{
