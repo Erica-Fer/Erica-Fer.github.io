@@ -365,27 +365,43 @@ nav a::before{
 /* 
     _CONTACT
 */
+.main-content h1{
+    color: #2E4052;
+    font-size: 1.4rem;
+}
 
-    .form-wrapper{
-        background-color: #2E4052;
-        height: 300px;
-        width: 300px;
-    }
+.form-wrapper{
+    /* box-shadow: 2px solid var(--accent-color); */
+    box-shadow: 0 0 7px 0 rgb(46,64,82,0.7);
+    background: white;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.form-wrapper form{
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+
+}
+
+.form-wrapper p{
+    font-weight: 600;
+    font-size: small;
+}
+
+.form-wrapper input{
+    width: 100%;
+}
+
+
 
 
 @media (min-width: 800px){
     .form-wrapper{
         all: unset;
-        grid-column: 2;
-        background: #A8591D;
-        height: 300px;
-        width: 300px;
     }
 }
 
-.form-wrapper{
-    all: unset;
-}
 
 /* KEYFRAMES */
 @keyframes grow-in{
