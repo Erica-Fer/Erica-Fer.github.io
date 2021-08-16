@@ -22,7 +22,7 @@ body{
     margin: 0;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
     body{
         display: grid;
         grid-template-columns: 10em minmax(250px, 1fr) 10em;
@@ -36,7 +36,7 @@ body{
     padding-right: 1em;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
     .main-content{
         padding: 0;
         margin: 0;
@@ -65,13 +65,13 @@ body{
     margin: 0;
     padding: 0;
     justify-content: center;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .footer ul::after{
     content: '';
     display: block;
-    margin-top: 3.5em;
+    margin-top: 2.5em;
     position: absolute;
     border-radius: 50%;
     background-color: white;
@@ -80,7 +80,8 @@ body{
 }
 
 .footer li{
-    margin: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
     margin-bottom: 0;
 }
 
@@ -98,7 +99,7 @@ body{
     display: flex;
     justify-content: center;
     font-weight: 100;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .footer .contact i{
@@ -117,7 +118,7 @@ body{
     padding: 0;
 }
 
-@media (max-width: 800px){
+@media (max-width: 700px){
     .footer{
         margin-top: auto;
     }
@@ -126,9 +127,18 @@ body{
         margin-top: .5em;
     }
     
-    .footer .contact{
+    .footer p{
+        margin-top: 1.5em;
         margin-bottom: .5em;
     }
+
+    .footer .contact{
+        position: absolute;
+        visibility: hidden;        
+        /* margin-bottom: .5em; */
+    }
+
+    
 }
 
 /* END FOOTER */
@@ -255,7 +265,7 @@ nav a::before{
     font-weight: 700;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
     .toggle-label{
         display: none;
     }
@@ -417,7 +427,6 @@ nav a::before{
 
 .form-wrapper form button, .form-wrapper form textarea{
     width: 100%;
-    padding: 0;
     margin: 0;
 }
 
@@ -427,12 +436,13 @@ nav a::before{
     margin: 0;
 }
 
-
-
-@media (min-width: 800px){
-    .form-wrapper{
-        all: unset;
-    }
+.form-wrapper form button{
+    background-color: var(--alt-color);
+    padding: 1em;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: medium;
 }
 
 
