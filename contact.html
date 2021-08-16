@@ -37,26 +37,26 @@
         <p>Use the form below to reach out!</p>
         <div class="form-wrapper">
             <h1>Contact Form</h1>
-            <form action="submit">
+            <form>
                 <p>
-                    <label for="name">Name</label><br>
-                    <input type="text" id="name">
+                    <label for="name" class="required">Name</label><br>
+                    <input type="text" id="name" required>
                 </p>
                 <p>
                     <label for="company">Company</label><br>
                     <input type="text" id="company">
                 </p>
                 <p>
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email">
+                    <label for="email" class="required">Email</label><br>
+                    <input type="email" id="email" required>
                 </p>
                 <p>
                     <label for="number">Phone Number</label><br>
                     <input type="text" id="number">
                 </p>
                 <p class="filled">
-                    <label for="message">Message</label><br>
-                    <textarea id="message" rows="5"></textarea>
+                    <label for="message" class="required">Message</label><br>
+                    <textarea id="message" rows="5" required></textarea>
                 </p>
                 <p class="filled">
                     <button>Submit</button>

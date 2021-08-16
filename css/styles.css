@@ -414,6 +414,12 @@ nav a::before{
 
 }
 
+.form-wrapper form .required::after{
+    content: '*';
+    color: rgb(199, 37, 15);
+    padding-left: .25em;
+}
+
 .form-wrapper p{
     font-weight: 600;
     text-align: left;
@@ -443,6 +449,45 @@ nav a::before{
     color: white;
     font-weight: 700;
     font-size: medium;
+    transition: 150ms ease-in-out;
+}
+
+.form-wrapper form button:hover{
+    background-color: #a8591db7;
+    transition: 150ms ease-in-out;
+}
+
+@media (min-width: 700px){
+    .main-content{
+        margin-bottom: 2em;
+    }
+
+    .main-content h1{
+        font-size: x-large;
+    }
+
+    .main-content p{
+        font-size: medium;
+        margin-bottom: 2em;
+    }
+
+    .form-wrapper h1{
+        font-size: large;
+        margin-bottom: 1em;
+    }
+
+    .form-wrapper label{
+        font-size: medium;
+    }
+
+    .form-wrapper .filled{
+        width: 100%;
+    }
+
+    .form-wrapper form input, .form-wrapper form textarea{
+        box-sizing: border-box;
+        padding: 7px;
+    }
 }
 
 
