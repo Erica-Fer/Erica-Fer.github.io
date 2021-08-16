@@ -381,6 +381,7 @@ nav a::before{
 .form-wrapper form{
     display: grid;
     grid-template-columns: .5fr .5fr;
+    grid-gap: 10px;
 
 }
 
@@ -390,9 +391,20 @@ nav a::before{
 }
 
 .form-wrapper input{
-    width: 100%;
+    width: 90%;
 }
 
+.form-wrapper form button, .form-wrapper form textarea{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.form-wrapper .filled{
+    grid-column: 1/3;
+    padding: 0;
+    margin: 0;
+}
 
 
 
