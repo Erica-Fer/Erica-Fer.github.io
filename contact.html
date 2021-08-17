@@ -37,6 +37,9 @@
         <p>Use the form below to reach out!</p>
         <div class="form-wrapper">
             <h1>Contact Form</h1>
+            <!-- source:
+            https://stackoverflow.com/questions/39679786/html-form-data-to-google-sheets
+            https://www.developerdrive.com/add-google-forms-static-site/#:~:text=%20How%20to%20Add%20Custom%20Google%20Forms%20to,On-site%20Form.%20Google%20uses%20custom%20name...%20More%20 -->
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='contact.html';}"></iframe>
              <form action="https://docs.google.com/forms/d/e/1FAIpQLSfPBmkNBYYJnD4_Fr19BKkDFMOtEv8zA_Xzh0zmALJTMo5Hzw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
                 <p>
