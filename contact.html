@@ -37,10 +37,10 @@
         <p>Use the form below to reach out!</p>
         <div class="form-wrapper">
             <h1>Contact Form</h1>
-            <form>
+             <form> <!-- action="php/contact.php" method="post" -->
                 <p>
-                    <label for="name" class="required">Name</label><br>
-                    <input type="text" id="name" required>
+                    <label for="fullname" class="required">Name</label><br>
+                    <input type="text" id="fullname" required>
                 </p>
                 <p>
                     <label for="company">Company</label><br>
@@ -59,7 +59,7 @@
                     <textarea id="message" rows="5" required></textarea>
                 </p>
                 <p class="filled">
-                    <button>Submit</button>
+                    <button type="submit" name="submit">Submit</button>
                 </p>
             </form>
         </div>
