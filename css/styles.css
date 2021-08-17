@@ -259,6 +259,14 @@ nav a::before{
     right: 0;
 }
 
+nav .visited{
+    color: gray;
+}
+
+nav .visited::before{
+    visibility: hidden;
+}
+
 .nav-home{
     color: white;
     text-align: center;
@@ -323,7 +331,7 @@ nav a::before{
     
     nav a::before{
         content: '';
-        height: 2gipx;
+        height: 2px;
         display: flex;
         justify-content: flex-end;
         background: white;
@@ -340,7 +348,7 @@ nav a::before{
         transform: scale(1,1);
         animation: grow-in 250ms;
     }
-    
+
     .nav-home{
         font-size: 1.25rem;
         position: absolute;
@@ -460,7 +468,7 @@ nav a::before{
 .form-wrapper form button:hover{
     background-color: #a8591db7;
     transition: 150ms ease-in-out;
-} */
+}
 
 @media (min-width: 700px){
     .main-content{
