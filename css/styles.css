@@ -18,6 +18,10 @@ h1, p{
     font-style: normal;
 }
 
+button{
+    cursor: pointer;
+}
+
 /* BODY */
 body{
     background-color: var(--main-color);
