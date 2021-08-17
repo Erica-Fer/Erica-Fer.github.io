@@ -37,26 +37,27 @@
         <p>Use the form below to reach out!</p>
         <div class="form-wrapper">
             <h1>Contact Form</h1>
-             <form> <!-- action="php/contact.php" method="post" -->
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='contact.html';}"></iframe>
+             <form action="https://docs.google.com/forms/d/e/1FAIpQLSfPBmkNBYYJnD4_Fr19BKkDFMOtEv8zA_Xzh0zmALJTMo5Hzw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
                 <p>
                     <label for="fullname" class="required">Name</label><br>
-                    <input type="text" id="fullname" required>
+                    <input type="text" id="fullname" name="entry.505894994" required>
                 </p>
                 <p>
                     <label for="company">Company</label><br>
-                    <input type="text" id="company">
+                    <input type="text" id="company" name="entry.2051216205">
                 </p>
                 <p>
                     <label for="email" class="required">Email</label><br>
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" name="entry.1753564620" required>
                 </p>
                 <p>
                     <label for="number">Phone Number</label><br>
-                    <input type="text" id="number">
+                    <input type="text" id="number" name="entry.1177139244">
                 </p>
                 <p class="filled">
                     <label for="message" class="required">Message</label><br>
-                    <textarea id="message" rows="5" required></textarea>
+                    <textarea id="message" rows="5" name="entry.2125905077" required></textarea>
                 </p>
                 <p class="filled">
                     <button type="submit" name="submit">Submit</button>
