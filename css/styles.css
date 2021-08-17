@@ -13,6 +13,11 @@ html{
     height: 100%;
 }
 
+h1, p{
+    text-align: left;
+    font-style: normal;
+}
+
 /* BODY */
 body{
     background-color: var(--main-color);
@@ -363,7 +368,7 @@ nav a::before{
 */
 
 /* 
-    _LEADERSHIP
+    _EVENTS
 */
 
 
@@ -379,13 +384,13 @@ nav a::before{
     color: var(--accent-color);
 }
 
-.main-content h1{
+.contact h1{
     text-align: center;
     font-size: 1.3rem;
     margin-bottom: 0;
 }
 
-.main-content p{
+.contact p{
     font-size: .9rem;
     font-style: oblique;
     text-align: center;
@@ -455,7 +460,7 @@ nav a::before{
 .form-wrapper form button:hover{
     background-color: #a8591db7;
     transition: 150ms ease-in-out;
-}
+} */
 
 @media (min-width: 700px){
     .main-content{
