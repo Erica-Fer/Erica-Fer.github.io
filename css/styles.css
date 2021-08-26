@@ -140,16 +140,22 @@ body{
     padding: 0;
 }
 
+/* small screen */
 @media (max-width: 700px){
     .footer{
+        display: flex;
+        flex-direction: column;
         margin-top: auto;
     }
 
     .footer ul{
+        display: flex;
+        justify-content: center;
         margin-top: .5em;
     }
     
     .footer p{
+        display: flex;
         margin-top: 1.5em;
         margin-bottom: .5em;
     }
@@ -159,8 +165,6 @@ body{
         visibility: hidden;        
         /* margin-bottom: .5em; */
     }
-
-    
 }
 
 /* END FOOTER */
@@ -290,11 +294,12 @@ nav .visited::before{
     align-items: center;
     position: relative;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     z-index: 999;
     font-weight: 700;
 }
 
+/* large screen */
 @media (min-width: 700px) {
     .toggle-label{
         display: none;
@@ -391,15 +396,23 @@ nav .visited::before{
 /* 
     _PROJECTS
 */
+.projects h1{
+    font-size: calc(1rem + 2vw);
+    margin-bottom: 0;
+}
 
-.main-content .card{
+.projects p{
+    margin-top: 0;
+}
+
+.card{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 35% 1fr;
     width:100%; /*container-width*/
     justify-content: center;
-    height: 55vh;
-    background: url("//unsplash.it/600/600?random=1");
+    height: calc(2rem + 50vh);
+    background: url("//unsplash.it/800/800?random=1");
     overflow:hidden;
     object-fit: contain;
     border-radius: 5px;
@@ -407,7 +420,7 @@ nav .visited::before{
 
 }
 
-.main-content .card::after{
+.card::after{
     content: '';
     grid-column: 1/2;
     grid-row: 2/3;
@@ -418,18 +431,7 @@ nav .visited::before{
     transform-origin: bottom;
 }
 
-.main-content .card:hover{
-    transform: scale(1.02,1.02);
-}
 
-.main-content .card:hover::after{
-    transform: scale(1,0);
-}
-
-.main-content .card:hover .info{
-    opacity: 0;
-    transition: 100ms ease-in-out;
-}
 
 .card .info{
     grid-column: 1/2;
@@ -439,7 +441,9 @@ nav .visited::before{
 
 }
 
-.card h2{
+.card h2, .card p{
+    padding: .5rem 0 0 2rem;
+
     margin: 0;
 }
 
@@ -452,8 +456,21 @@ nav .visited::before{
 .card p{
     /* width: 100%; */
     grid-column: 1/2;
-    padding: 2em;
+}
 
+@media (min-width: 700px){
+    .card:hover{
+        transform: scale(1.02,1.02);
+    }
+    
+    .card:hover::after{
+        transform: scale(1,0);
+    }
+    
+    .card:hover .info{
+        opacity: 0;
+        transition: 100ms ease-in-out;
+    }
 }
 
 /* 
