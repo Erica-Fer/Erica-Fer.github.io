@@ -177,6 +177,7 @@ https://www.youtube.com/watch?v=8QKOaTYvYUA&t=4s
 */
 header{
     background-color: var(--accent-color);
+    z-index: 200;
     padding: 1em;
     position: fixed;
     text-align: center;
@@ -310,7 +311,7 @@ nav .visited::before{
     }
 
     header{
-        position: unset;
+        position: sticky;
         min-height: 2em;
         grid-row: 1/2;
         grid-column: 1/4;
@@ -408,6 +409,7 @@ nav .visited::before{
 
 .card{
     display: grid;
+    z-index: 0;
     grid-template-columns: 1fr;
     grid-template-rows: 35% 1fr 13%;
     width:100%; /*container-width*/
@@ -441,7 +443,7 @@ nav .visited::before{
     /* Add this back in */
     /* grid-row: 2/3; */
     grid-row: 2/4;
-    z-index: 5;
+    z-index: 2;
     transition: 150ms ease-in-out 130ms;
 
 }
@@ -497,6 +499,7 @@ nav .visited::before{
     height: 95%;
 }
 
+/* large screen */
 @media (min-width: 700px){
     .projects{
         display: grid;
