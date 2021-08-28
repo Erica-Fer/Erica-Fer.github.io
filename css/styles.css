@@ -311,6 +311,7 @@ nav .visited::before{
     }
 
     header{
+        position: -webkit-sticky;
         position: sticky;
         min-height: 2em;
         grid-row: 1/2;
@@ -515,7 +516,7 @@ nav .visited::before{
 
     .sidefill{
         grid-column: 2/3;
-        grid-row: 2/4;
+        grid-row: 2/11;
     }
 
     .card{
