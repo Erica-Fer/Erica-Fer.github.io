@@ -520,7 +520,7 @@ nav .visited::before{
     }
 
     .card{
-        cursor: pointer;
+        /* cursor: pointer; */
         grid-area: span 1;
         grid-row: span 1;
         margin: 0;
