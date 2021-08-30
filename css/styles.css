@@ -555,7 +555,29 @@ nav .visited::before{
 /* 
     _ABOUT
 */
+.about{
+    
+    background: var(--alt-color);
+    width: 100;
+    color: white;
+}
 
+.action{
+    all: unset;
+}
+
+.education{
+    display: flex;
+    justify-content: center;
+    background: #cf8d22;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    background: #8d5e13;
+    color: white;
+}
 
 /* 
     _CONTACT
