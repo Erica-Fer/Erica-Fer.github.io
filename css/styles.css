@@ -411,6 +411,7 @@ nav .visited::before{
 .card{
     display: grid;
     z-index: 0;
+    background-size: cover;
     grid-template-columns: 1fr;
     grid-template-rows: 35% 1fr 13%;
     width:100%; /*container-width*/
