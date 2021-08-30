@@ -577,6 +577,7 @@ nav .visited::before{
     margin-top: 3rem;
     background: var(--alt-color);
     color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
 }
 
 .about h1{
@@ -585,7 +586,7 @@ nav .visited::before{
 
 }
 
-.about h2{
+.about h2, .action h2{
     margin-bottom: 1rem;
 }
 
@@ -634,13 +635,21 @@ nav .visited::before{
     margin: 1rem 0;
 }
 
+.education, .skills{
+    margin: 0 1em 1em;
+    border-radius: 10%;
+    box-shadow: 0 0 7px 0 rgb(46,64,82,0.7);
+    background: white;
+
+}
+
 .education{
     display: flex;
+
     flex-direction: column;
     justify-content: center;
     text-align: center;
 
-    background: white;
 }
 
 .education ul{
@@ -667,8 +676,7 @@ nav .visited::before{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background: #8d5e13;
-    color: white;
+    color: var(--accent-color);
 }
 
 .list{
