@@ -579,8 +579,17 @@ nav .visited::before{
     color: white;
 }
 
-.about p{
-    z-index: 100;
+.about h2{
+    margin-bottom: 1rem;
+}
+
+.about i{
+    font-style: normal;
+    font-weight: 10;
+}
+
+.about b{
+    font-size: xx-large;
 }
 
 /* .about::after{
@@ -601,6 +610,7 @@ nav .visited::before{
 
 .facelogo{
     display: flex;
+    z-index: 100;
     background: wheat;
     background-repeat: no-repeat;
     background-size: cover;
@@ -612,7 +622,27 @@ nav .visited::before{
 }
 
 .education{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
     background: white;
+}
+
+.education ul{
+    margin: 0;
+    padding: 1rem;
+}
+
+.education h3, .education h4{
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.education li{
+    text-align: left;
+    padding-left: 3rem;
 }
 
 .education h4{
