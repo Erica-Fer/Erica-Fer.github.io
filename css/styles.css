@@ -579,6 +579,12 @@ nav .visited::before{
     color: white;
 }
 
+.about h1{
+    color: var(--accent-color);
+    text-shadow: .05em .05em white;
+
+}
+
 .about h2{
     margin-bottom: 1rem;
 }
@@ -592,15 +598,22 @@ nav .visited::before{
     font-size: xx-large;
 }
 
-/* .about::after{
+.about::after{
     content: '';
     position: absolute;
+    clip-path: polygon(0 0, 100% 0, 100% 49%, 0 61%);
     background: var(--main-color);
-    width: 100px;
-    height: 100px;
+    width: 100%;
     left: 0;
+    right: 0;
     bottom: 0;
-} */
+    top: 0;
+}
+
+.about>*{
+    position: relative;
+  z-index: 2;
+}
 
 .lead{
     display: flex;
