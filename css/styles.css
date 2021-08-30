@@ -555,26 +555,74 @@ nav .visited::before{
 /* 
     _ABOUT
 */
+
+.aboutme{
+    margin: 0;
+    padding: 0;
+}
+
+.pagecontent h1, .pagecontent h2, .pagecontent h3, .pagecontent h4, .pagecontent p{
+    margin: 0;
+}
+
+.pagecontent ul{
+    list-style: none;
+}
+
+.about, .action, .education, .skills{
+    padding: 2rem 1rem;
+}
+
 .about{
-    
+    margin-top: 3rem;
     background: var(--alt-color);
-    width: 100;
     color: white;
 }
 
-.action{
-    all: unset;
+.about p{
+    z-index: 100;
 }
 
-.education{
+/* .about::after{
+    content: '';
+    position: absolute;
+    background: var(--main-color);
+    width: 100px;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+} */
+
+.lead{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.facelogo{
+    display: flex;
+    background: wheat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40%;
+    box-shadow: 0 0 7px 0 rgb(46,64,82,0.7);
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem 0;
+}
+
+
+
+
+.education{
     background: #cf8d22;
 }
 
+.education h4{
+    font-weight: 100;
+}
+
 .skills{
-    display: flex;
-    justify-content: center;
     background: #8d5e13;
     color: white;
 }
