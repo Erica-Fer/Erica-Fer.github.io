@@ -702,6 +702,55 @@ nav .visited::before{
     padding-left: 1rem;
 }
 
+/* large screens */
+@media (min-width:700px){
+    .aboutme{
+        grid-column: 1/4;
+    }
+
+    .about{
+        margin: 0;
+    }
+
+    .about::after{
+    clip-path: polygon(0 0, 100% 0, 100% 31%, 0 47%);
+
+    }
+
+    .about, .action{
+        padding: 2em 10em;
+    }
+
+    .about h2{
+        text-align: center;
+        align-items: center;
+    }
+
+    .qualifications{
+        display: grid;
+        grid-template-columns: 10em minmax(250px, 1fr) 1em minmax(250px, 1fr) 10em;
+    }
+
+    .education{
+        margin-right: .5rem;
+        grid-column: 2/3;
+    }
+
+    .skills{
+        margin-left: .5rem;
+        grid-column: 4/5;
+    }
+
+    .education, .skills{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+}
+
+
+
 /* 
     _CONTACT
 */
